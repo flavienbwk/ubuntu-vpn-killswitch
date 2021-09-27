@@ -25,7 +25,7 @@ The principle behind the following scripts is simply to deny all connection exce
 2. Installing firewall script
 
     ```bash
-    git clone https://github.com/flavienbwk/ubuntu-vpn-killswitch
+    git clone https://github.com/flavienbwk/ubuntu-vpn-killswitch && cd ubuntu-vpn-killswitch
 
     sudo apt-get install ufw -y # Installing UFW
 
