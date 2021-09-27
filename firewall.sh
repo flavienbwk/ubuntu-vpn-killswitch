@@ -1,7 +1,12 @@
 #!/bin/bash
 
-sudo ufw reset
-sudo ufw default deny incoming
-sudo ufw default deny outgoing
-sudo ufw allow out on tun0 from any to any
-sudo ufw enable
+if [ "$EUID" -ne 0 ]
+    then echo "Please run as root (sudo)"
+    exit 1
+fi
+
+ufw reset
+ufw default deny incoming
+ufw default deny outgoing
+ufw allow out on tun0 from any to any
+ufw enable

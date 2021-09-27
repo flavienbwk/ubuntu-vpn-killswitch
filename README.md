@@ -35,8 +35,8 @@ The principle behind the following scripts is simply to deny all connection exce
 
     # Enable firewall for VPN-connections only
     # CONNECT TO YOUR VPN FIRST
-    bash ~/firewall.sh
+    sudo bash ~/firewall.sh
 
     # Disable firewall to go back to regular connection
-    bash ~/unfirewall.sh
+    sudo bash ~/unfirewall.sh
     ```
